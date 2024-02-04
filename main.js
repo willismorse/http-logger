@@ -3,7 +3,7 @@ const morgan = require("morgan");
 
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 4000;
 
 // set up morgan middleware
 app.use(morgan("dev"));
