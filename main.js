@@ -8,11 +8,11 @@ const port = process.env.PORT || 4000;
 // set up morgan middleware
 app.use(morgan("dev"));
 
-app.get('/', (req, res) => {
+app.get('/**', (req, res) => {
   res.send('')
 })
 
-app.post('/', (req, res) => {
+app.post('/**', (req, res) => {
     res.send('{}')
   })
   
